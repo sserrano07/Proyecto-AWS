@@ -1,5 +1,4 @@
-provider aws{
-    access_key = "var.aws_access_key"
-    secret_key = "var.aws_secret_access_key"
-    region = "eu-central-1"
+provider "aws" {
+  shared_credentials_file = "$HOME/.aws/credentials"
+  region = "eu-central-1"
 }

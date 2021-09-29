@@ -7,7 +7,6 @@ module "vpc" {
   azs             = ["eu-central-1a", "eu-central-1b", "eu-central-1c"]
   private_subnets = ["10.104.0.0/18", "10.104.64.0/18", "10.104.128.0/18"]
   public_subnets  = ["10.104.200.0/24", "10.104.202.0/24", "10.104.204.0/24"]
-  intra_subnets   = ["10.104.51.0/24", "10.104.52.0/24", "10.104.53.0/24"]
 
   enable_nat_gateway = true
 
