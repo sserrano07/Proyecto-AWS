@@ -1,7 +1,6 @@
-output "vpc_id"{
-  value = module.vpc.vpc_id
-}
 
-output private_subnets{
-  value = module.vpc.private_subnets
+# outputs.tf
+
+output "alb_hostname" {
+  value = aws_alb.main.dns_name
 }
