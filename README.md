@@ -21,3 +21,11 @@ Para poder utilizar este ejemplo necesitaremos:
 
 ### Explicación
 
+Desplegaremos una imagen de Wordpress ( última versión ) en un clúster bajo la tecnología ECS-Fargate de AWS. La infraestructura se desplegará mediante código utilizando Terraform. 
+
+Los parámetros más importantes los encontrarás en el archivo 'variables.tf' siendo los más importantes:
+
+- aws-region.
+- az-count.
+- app-image.
+
