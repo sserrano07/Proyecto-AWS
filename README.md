@@ -60,6 +60,7 @@ Explicaré archivo por archivo el funcionamiento de éste y que despliega dicho 
  
  ```$ wget https://releases.hashicorp.com/terraform/0.14.3/terraform_0.14.3_linux_amd64.zip```
  
+ 
 
     
 
