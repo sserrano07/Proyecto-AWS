@@ -57,6 +57,7 @@ Explicaré archivo por archivo el funcionamiento de éste y que despliega dicho 
  
  Lo primero que deberemos hacer será instalar Terraform en nuestro equipo. En mi caso al utilizar comandos de Linux, pondré los comandos para instalarlo.
  Descargaremos la última versión de Terraform:
+ 
  ```$ wget https://releases.hashicorp.com/terraform/0.14.3/terraform_0.14.3_linux_amd64.zip```
  
 
