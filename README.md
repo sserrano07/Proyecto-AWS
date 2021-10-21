@@ -60,6 +60,14 @@ Explicaré archivo por archivo el funcionamiento de éste y que despliega dicho 
  
  ```$ wget https://releases.hashicorp.com/terraform/0.14.3/terraform_0.14.3_linux_amd64.zip```
  
+ A continuación, descompriremos el archivo de descarga:
+ 
+ ````sudo unzip terraform_0.14.3_linux_amd64.zip````
+ 
+ Esto nos dará un archivo de terraform, para poder utilizarlo desde cualquier sitio de nuestro sistema lo moveremos a la ruta /usr/local/bin/:
+ 
+ ```$ sudo mv terraform /usr/local/bin/```
+
  
 
     
