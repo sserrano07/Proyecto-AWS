@@ -53,7 +53,9 @@ Explicaré archivo por archivo el funcionamiento de éste y que despliega dicho 
     - username: En esta variable definiremos el nombre de usuario por el que nuestro Wordpress nos habilitará el acceso.
     - password: En esta variable definiremos la contraseña de nuestro usuario en Wordpress.
 
-#### Uso de Terraform.
+#### Terraform.
+
+##### Instalación.
  
  Lo primero que deberemos hacer será instalar Terraform en nuestro equipo. En mi caso al utilizar comandos de Linux, pondré los comandos para instalarlo.
  Descargaremos la última versión de Terraform:
@@ -62,13 +64,41 @@ Explicaré archivo por archivo el funcionamiento de éste y que despliega dicho 
  
  A continuación, descompriremos el archivo de descarga:
  
- ````sudo unzip terraform_0.14.3_linux_amd64.zip````
+ ```$ sudo unzip terraform_0.14.3_linux_amd64.zip```
  
  Esto nos dará un archivo de terraform, para poder utilizarlo desde cualquier sitio de nuestro sistema lo moveremos a la ruta /usr/local/bin/:
  
  ```$ sudo mv terraform /usr/local/bin/```
-
  
+ Para comprobar que está instalado correctamente, comprobaremos la versión de terraform:
+ 
+ ```$ terraform version```
+
+ ##### Uso de Terraform.
+ 
+ Para poder desplegar nuestra infraestructura, deberemos situarnos en la ruta donde se encuentran todos los archivos de nuestro código.
+ 
+ Una vez situados en dicha ruta, deberemos iniciar, planificar y aplicar nuestro código de Terraform.
+ 
+ Para iniciar Terraform deberemos escribir el siguiente comando:
+ 
+ ```$ terraform init```
+ 
+ Cuando Terraform haya terminado de iniciarse, lo siguiente que deberemos realizar será la planificación de nuestra infraestructura. En dicha planificación podremos repasar todo lo que va a desplegar Terraform y los errores de sintaxis que podamos tener en nuestro código. Para ello ejecutaremos el siguiente comando:
+ 
+ ``` $ terraform plan```
+ 
+ Cuando estemos seguros que todo nuestro código está bien y estemos de acuerdo, toca desplegar la ifraestructura en la nube de Amazon. Para ello ejecutaremos el siguiente comando:
+ 
+ ``` $ terraform apply ```
+ 
+ Esperaremos a que Terraform haga su trabajo y despliegue todo, una vez haya terminado, podremos ir a la consola de administración de AWS y comprobar que todo se ha desplegado correctamente.
+ 
+ Si queremos eliminar toda nuestra infraestructura, deberemos ejecutar el siguiente comando:
+ 
+ ``` $ terraform destroy ```
+ 
+ Con este comando eliminaremos toda nuestra infraestructura desplegada en la nube de AWS.
 
     
 
